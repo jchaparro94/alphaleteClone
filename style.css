@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #b2b3b5;
+}
+
+/* Base Styling */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/* Navigation */
+nav {
+  background: #000;
+}
+
+nav a {
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.main-nav .logo {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.right-menu {
+  margin-right: 20px;
+}
+
+/* Anncounement Bar */
+.announcement-bar {
+  background-color: var(--secondary-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcement-text {
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+}
+
+.hero-image-1 {
+  flex: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-image-1.png") no-repeat center center/cover;
+  height: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-2 {
+  flex: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-image-2.png") no-repeat center center/cover;
+  height: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
