@@ -66,6 +66,11 @@ nav a {
   border-bottom: 2px solid #fff;
 }
 
+.main-nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .right-menu {
   margin-right: 20px;
 }
@@ -115,4 +120,22 @@ nav a {
   border: 2px solid #fff;
   padding: 10px 20px;
   font-size: 1.2rem;
+}
+
+/* Carousel Section*/
+.carousel-item {
+  height: 750px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.carousel-caption .btn-carousel:hover {
+  cursor: pointer;
+  color: #fff;
 }
