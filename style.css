@@ -52,6 +52,11 @@ nav a {
   font-size: 2rem;
 }
 
+.main-nav .logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .main-nav ul {
   display: flex;
 }
@@ -60,8 +65,23 @@ nav a {
   padding: 0 10px;
 }
 
-.main-nav ul li:hover {
-  border-bottom: 2px solid #fff;
+.main-menu,
+.right-menu {
+  padding-top: 15px;
+}
+
+.main-menu li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.5s;
+}
+
+.main-menu li a:hover::after {
+  width: 100%;
+  transition: width 0.5s;
 }
 
 .main-nav ul li a:hover {
@@ -69,8 +89,12 @@ nav a {
   text-decoration: none;
 }
 
-.right-menu {
-  margin-right: 20px;
+.right-menu li a {
+  margin-right: 15px;
+}
+
+.right-menu ul li a:hover {
+  border-bottom: none;
 }
 
 /* Anncounement Bar */
@@ -168,7 +192,7 @@ nav a {
 /* Footer */
 
 .footer {
-  height: 500px;
+  height: 450px;
   width: 100vw;
   background: var(--primary-color);
   display: flex;
@@ -179,6 +203,17 @@ nav a {
 
 .footer-content {
   width: 100%;
+  margin-top: 5px;
+}
+
+.footer-content h3 {
+  font-size: 1.4rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  font-weight: none;
 }
 
 .input-text {
